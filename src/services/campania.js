@@ -14,6 +14,7 @@ export async function crearCampanaEnEspera({ nombre, categoria }) {
     .insert([{
       nombre,
       categoria,
+      imagen_url: imagenURL || null
     }])
     .select()
     .single();
@@ -46,7 +47,8 @@ export async function confirmarCampana(id) {
       estado: "activa",
       categoria: campanaEnEspera.categoria,
       reseñas: [], // inicialmente vacía
-      idBusy: "activa"
+      idBusy: "activa",
+      imagen_url: imagenURL || null
     }])
     .select()
     .single();

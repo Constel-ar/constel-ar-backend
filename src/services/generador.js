@@ -15,13 +15,3 @@ export function generarCodigo() {
   }
   return codigo;
 }
-
-// Guardar código en Supabase
-export async function guardarCodigo(codigo) {
-  const { data, error } = await supabase
-    .from("codigos")
-    .insert([{ codigo }]);
-
-  if (error) throw new Error(error.message);
-  return data;
-}
