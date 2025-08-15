@@ -30,7 +30,7 @@ export async function confirmarCampanaController(req, res) {
 // Listar campañas en espera
 export async function listarCampanasEnEsperaController(req, res) {
   try {
-    const campanas = await obtenerCampanasEnEspera();
+    const campanas = await obtenerCampanasEnEspera();a
     res.json(campanas);
   } catch (error) {
     res.status(500).json({ error: error.message });
