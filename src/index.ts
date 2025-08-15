@@ -1,5 +1,6 @@
 import express, { Application } from "express";
 import campaniaRoutes from "./routes/campania";
+import usuarioRoutes from "./routes/usuario";
 
 const app: Application = express();
 const PORT: number = 3000;
@@ -9,6 +10,7 @@ app.use(express.json());
 
 // Rutas
 app.use("/campanias", campaniaRoutes);
+app.use("/usuarios", usuarioRoutes);
 
 
 // Iniciar servidor
