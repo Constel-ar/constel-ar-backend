@@ -3,7 +3,6 @@ import { Request, Response } from 'express';
 import { supabase } from '../supabase/client'; 
 
 
-// Esta función maneja la carga de una empresa (endpoint POST /companies)
 export const createCompany = async (req: Request, res: Response) => {
   try {
     const { nombre, cuit, presupuesto, otros_datos } = req.body;

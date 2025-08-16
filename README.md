@@ -6,22 +6,12 @@ We'll use a simple architecture approach to divide the project into different la
 /src
   /routes          # Puntos de entrada para las rutas de Express
   /controllers     # Controladores que manejan la lógica de request/response
-  /campaigns       # Toda la funcionalidad relacionada con campañas
-    /temporary
-      temporary.controller.ts
-      temporary.service.ts
-      temporary.routes.ts
-    /confirmed
-      confirmed.controller.ts
-      confirmed.service.ts
-      confirmed.routes.ts
-    campaigns.types.ts  # Tipos/Interfaces compartidas en TypeScript
+  /services       # Lógica de controladores
   /supabase       # Integración con la base de datos Supabase y consultas
     client.ts     # Configuración del cliente de Supabase
-    queries.ts    # Funciones/consultas genéricas
-    migrations/   # Opcional: archivos SQL para creación de tablas
-index.ts
-.env.example
+  app.ts
+  server.ts
+  .env.example
 
 
 ## Contribution Methodology
@@ -37,11 +27,3 @@ index.ts
 - **Backend Framework:** Express + TypeScript  
 - **Database & Auth:** Supabase  
 - **Hosting Backend:** Railway
-
-
-
-
-
-create table 
-
-
