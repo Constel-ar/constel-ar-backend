@@ -1,10 +1,10 @@
 import express, { Request, Response } from "express";
 import { 
-  createCompany,
-} from "../controllers/companies";
+  createCompanyController,
+} from "../controllers/companies.controller";
 
 const router = express.Router();
 
-router.post("/espera", (req: Request, res: Response) => createCompany(req, res));
+router.post("/companies", (req: Request, res: Response) => createCompanyController(req, res));
 
 export default router;

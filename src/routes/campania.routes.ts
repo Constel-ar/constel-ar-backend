@@ -5,7 +5,7 @@ import {
   listarCampanasEnEsperaController,
   listarCampanasConfirmadasController,
   eliminarCampanaEnEsperaController
-} from "../controllers/campania";
+} from "../controllers/campania.controller";
 
 const router = express.Router();
 

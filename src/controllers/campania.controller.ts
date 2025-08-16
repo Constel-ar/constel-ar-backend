@@ -5,7 +5,7 @@ import {
   obtenerCampanasEnEspera,
   obtenerCampanasConfirmadas,
   eliminarCampanaEnEspera
-} from "../services/campania";
+} from "../services/campania.service";
 
 // Crear campaña en espera
 export async function crearCampanaEnEsperaController(req: Request, res: Response): Promise<void> {
@@ -21,7 +21,7 @@ export async function crearCampanaEnEsperaController(req: Request, res: Response
 export async function confirmarCampanaController(req: Request, res: Response): Promise<void> {
   try {
     const confirmada = await confirmarCampana(parseInt(req.params.id));
-    res.status(201).json({ mensaje: "Campaña confirmada", confirmada });
+    res.status(201).json({ mensaje: "Campaña confirmgada", confirmada });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }

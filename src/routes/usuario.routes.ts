@@ -3,7 +3,7 @@ import {
   crearUsuarioController,
   listarUsuariosController,
   obtenerUsuarioController,
-} from "../controllers/usuario";
+} from "../controllers/usuario.controller";
 
 const router = express.Router();
 
